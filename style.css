@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    font-size: 10px;
+    --primary-color: #d94f56;
+    --secondary-color: white;
+}
+
+.container{
+    min-height: 100vh;
+    background: url('/image/bg.jpg');
+    background-size: cover;
+    background-position: 32% 35%;
+}
+
+header nav{
+    display: flex;  
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+}
+header nav h1{
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin: 0 10px;
+}
+main{
+    height: 50vh;
+    
+}
+.leftMain{
+    height: 100%;
+    margin: 0 0 0 100px;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.leftMain h3{
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.leftMain h1{
+    color: var(--secondary-color);
+    font-size: 6rem;
+    text-transform: capitalize;
+}
+
+.leftMain p{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+.buttons{
+    margin: 20px 0 0 0;
+}
+.buttons button{
+    background-color: var(--primary-color);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    color: var(--secondary-color);
+    margin: 0 20px 0 0;
+}
+.buttons button:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:940px) {
+   :root{
+    font-size: 7px;
+   }
+   .container{
+    background-position: 75% 20%;
+   }
+}
+
+@media screen and (max-width:635px) {
+    nav{
+        flex-direction: column;
+    }
+    main{
+        height: 80vh;
+    }
+    .leftMain{
+        width: 80%;
+        margin: 0 0 0 30px;
+    }
+}
+
+@media screen and (max-width:481px)
+{
+    :root{
+        font-size: 5px;
+    }
+    .buttons button{
+        padding: 7px 15px;
+    }
+}
