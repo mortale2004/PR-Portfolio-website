@@ -90,12 +90,15 @@ main{
 
 
 @media screen and (max-width:940px) {
-   :root{
-    font-size: 7px;
-   }
-   .container{
-    background-position: 75% 20%;
-   }
+    :root{
+        font-size: 7px;
+    }
+    .container{
+        background-position: 75% 20%;
+    }
+    .container{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.957), rgba(0, 0, 0, 0.075)), url('image/bg.jpg');
+    }
 }
 
 @media screen and (max-width:635px) {
@@ -118,5 +121,9 @@ main{
     }
     .buttons button{
         padding: 7px 15px;
+    }
+    header nav ul li a{
+        margin: 0 5px;
+        font-size: 2rem;
     }
 }
